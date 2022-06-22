@@ -20,7 +20,7 @@ public class Doc extends File {
     }
 @Override
     public String toString(){
-       return  String.format("30-%s|",getName())+String.format("%11s|", getSize())+String.format("%-50s|",getFormat()+","+getPages()+" pages");
+       return  String.format("%s%5s%10d%s%s%s%s",getName(),"|",getSize(),"|",getFormat(),getPages(),"pages");
 }
 
 
