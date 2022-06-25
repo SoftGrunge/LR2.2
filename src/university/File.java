@@ -45,8 +45,8 @@ public abstract String toString();
 
     public static void printAll(File[] file) {
         System.out.println("-------------------------------------------------------------------------------------------------------------");
-        System.out.println(String.format("%-23s|", "File Name") + String.format("%-20s|", "Size")
-                + String.format("%-50s|", "Details"));
+        System.out.println(String.format("%s%15s%s%10s%s", "File Name" , "|" , "Size", "|", "Details"));
+        //String.format( "File Name" , "|" , "Size", "|", "Details"
         System.out.println("-------------------------------------------------------------------------------------------------------------");
         for (File f: file) {
             System.out.println(f.toString());

@@ -10,8 +10,7 @@ public class Video  extends Sound{
 
 @Override
     public String toString(){
-    return String.format("30-%s|",getName())+String.format("%20s|", getSize()) + String.format("%-50s|",getFormat()+","
-            + getDescription()+","+getConvertTime().stringConvertTime()+
-            ","+getPictureLength()+"x"+getPictureWidth());
+    return  String.format("%s%7s%d%4s%s%s%s%s%s%s%1d%s%d%s",getName(),"|",getSize(),"|",getFormat(),", ", getConvertTime().stringConvertTime(),", ",
+            getDescription(),", ",getPictureLength(),"x",getPictureWidth(),"|");
 }
 }

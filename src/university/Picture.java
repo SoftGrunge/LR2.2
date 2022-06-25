@@ -38,7 +38,7 @@ public Picture(String name, int size, FileFormat format, ConvertTime convertTime
     }
 @Override
     public String toString(){
-    return String.format("100%s|",getName())+String.format("%20s|", getSize()) + String.format("%-50s|",getFormat()+","+getPictureLength()+"x"+getPictureWidth());
-}
+    return String.format("%s%13s%d%7s%s%s%d%s%d", getName(), "|" , getSize(), "|", getFormat(), ", ", getPictureLength(), "x", getPictureWidth());
+}   //String.format( getName(), "|" , getSize(), "|", getFormat(), "," getPictureLength(), "x", getPictureWidth()
 
 }
