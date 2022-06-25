@@ -37,7 +37,6 @@ public void setConvertTime(ConvertTime convertTime){
     }
 @Override
     public String toString(){
-        return  String.format("30-%s",getName())+String.format("%10s","|")+String.format("%20s|", getSize()) +
-                String.format("%-50s|",getFormat()+","+ getConvertTime().stringConvertTime()+","+getDescription());
-}
+        return  String.format("%s%6s%d%7s%s%s%s%s%s", getName(),"|", getSize(), "|" , getFormat(), ", " , getConvertTime().stringConvertTime(), ", " , getDescription());
+}// String.format("%s%s%d%s%s%s%s%s%s" getName(),"|", getSize(), "|" , getFormat(), "," , getConvertTime().stringConvertTime(), "," , getDescription()
 }
